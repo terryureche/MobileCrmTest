@@ -45,9 +45,11 @@ class TestClass extends Component {
   }
 
   render() {
+    const aa = requireAll(require.context("./", true, '/index\.js'));
+
     return (
       <View>
-        <Text>this.state</Text>
+        <Text>{this.state.loggedIn}</Text>
       </View>
     )
   }

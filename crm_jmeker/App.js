@@ -9,7 +9,13 @@
 
 import TestClass from "./src/components/app-start/element.js";
 import { Provider } from "react-redux";
-import { createStore } from "redux";
+import Redux from "redux";
+
+
+
+const store = require("./src/libs/store-provider.js").default();
+
+
 
 const initialState = {
   "aaa" : "bbb"
@@ -17,7 +23,7 @@ const initialState = {
 
 
 
-const store = createStore()
+//const store = createStore()
 
 
 export default TestClass;
