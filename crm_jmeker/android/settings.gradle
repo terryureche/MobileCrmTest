@@ -1,0 +1,3 @@
+rootProject.name = 'crm_jmeker'
+
+include ':app'
